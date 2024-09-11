@@ -1,0 +1,135 @@
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: var(--Red);
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.trial-btn {
+  background-color: var(--Blue);
+  padding: 10px;
+  color: var(--Grayish-Blue);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05cap;
+  box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.trial-btn span {
+  color: white;
+}
+
+.trial-btn:hover {
+  background-color: hsl(248, 32%, 40%);
+}
+
+.claim-btn {
+  padding: 10px 5px;
+  background-color: var(--Green);
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05cap;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+.claim-btn:hover {
+  background-color: hsl(154, 59%, 40%);
+}
+
+input {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--Grayish-Blue);
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+small {
+  font-size: 12px;
+}
+
+small a {
+  color: var(--Red);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  font-size: 11px;
+  color: red;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.error-img {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  height: 20px;
+}
